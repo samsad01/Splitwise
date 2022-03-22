@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splitwise Cashflow</title>
+
+    <script
+      src="https://kit.fontawesome.com/5548f5ed00.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="heap.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="script2.js" type="module"></script>
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar">
+      <h1>Splitwise Cashflow Project</h1>
+    </nav>
+
+    <div id="container">
+      <div id="mynetwork">
+       
+      </div>
+     
+      
+      <div id="container2">
+        <span
+          id="temptext"
+          style="width: 100%; text-align: center; font-size: x-large;"
+        >
+          Click on solve to get Solution!
+        </span>
+        <div id="mynetwork2" style="display: none;"></div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Enter the details</p>
+        <div class="modalInp">
+        <input type="number" placeholder="From" id="id1" required>
+        <input type="number" placeholder="To" id="id2" required>
+        <input type="number" placeholder="value" id="value" required>
+        <input type="button" id="btt" class="btn btn-success" value="Submit">
+        </div>
+        <br>
+        <div class="modalBtn">
+        
+        
+        <input type="button" id="btt1" class="btn btn-primary" value="Click here to stop taking inputs">
+      </div>
+      </div>
+    
+    </div>
+    <div>
+      
+      <br />
+
+      <button type="button" class="btn btn-danger" id="generate-graph">
+        Get New Problem
+      </button>
+      <br/>
+      <button type="button" class="btn btn-danger" id="generate-personal-graph" >
+        Create Your Own Problem
+      </button>
+      <br />
+      <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+  </body>
+</html>
